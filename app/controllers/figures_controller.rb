@@ -37,7 +37,6 @@ class FiguresController < Sinatra::Base
     @landmarks = Landmark.all
     #binding.pry
     erb :edit
-
   end
 
   patch '/figures/:id' do
