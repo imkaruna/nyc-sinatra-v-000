@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Figures</title>
+  </head>
+
+  <body>
+    <h1>List of figures</h1>
+    <% @figures.each do |figure| %>
+    <%= figure.name %> <br>
+    <% end %>
+    <h2><a href="/figures/new">Create New Figure</a></h2>
+  </body>
+</html>
