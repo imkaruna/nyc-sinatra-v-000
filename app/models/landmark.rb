@@ -1,4 +1,4 @@
 class Landmark <ActiveRecord::Base
-  has_one :figure
+  belongs_to :figure
 
 end

@@ -1,4 +1,5 @@
 class Figure < ActiveRecord::Base
   has_many :landmarks
-  has_and_belongs_to_many :titles
+  has_many :figure_titles
+  has_many :titles, through: :figure_titles
 end
